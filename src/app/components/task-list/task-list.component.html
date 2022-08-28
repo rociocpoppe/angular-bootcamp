@@ -1,9 +1,0 @@
-<div class="task-list">
-    <app-new-task (newTask)="addTask($event)"></app-new-task>
-    <ul *ngFor="let task of tasks"> 
-        <app-indivual-task (changed)="changeChecked($event)" 
-                             (deleted)="delete($event)" 
-                             [task]="task">
-        </app-indivual-task>
-    </ul>
-</div>
